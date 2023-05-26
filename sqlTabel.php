@@ -1,35 +1,35 @@
-<?php
-if (isset($_POST['create_table'])) {
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "ecommerce";
+<!-- <?php
+// if (isset($_POST['create_table'])) {
+//   $servername = "localhost";
+//   $username = "root";
+  // $password = "";
+  // $dbname = "ecommerce";
 
-  $con=mysqli_connect($servername, $username, $password, $dbname);
+  // $con=mysqli_connect($servername, $username, $password, $dbname);
 
-  if ($con->connect_error) {
-    die("Connection failed: " . $con->connect_error);
-  }
-
-
-  $sql = "CREATE TABLE customers (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    firstname VARCHAR(30) NOT NULL,
-    lastname VARCHAR(30) NOT NULL,
-    email VARCHAR(50),
-    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-  )";
-
-  if ($con->query($sql) === true) {
-    echo "Table created successfully";
-  } else {
-    echo "Error creating table: " ;
-  }
+  // if ($con->connect_error) {
+  //   die("Connection failed: " . $con->connect_error);
+  // }
 
 
-  $con->close();
-}
-?>
+  // $sql = "CREATE TABLE customers (
+  //   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  //   firstname VARCHAR(30) NOT NULL,
+  //   lastname VARCHAR(30) NOT NULL,
+  //   email VARCHAR(50),
+//     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+//   )";
+
+//   if ($con->query($sql) === true) {
+//     echo "Table created successfully";
+//   } else {
+//     echo "Error creating table: " ;
+//   }
+
+
+//   $con->close();
+// }
+// ?>
 
 
 <!DOCTYPE html>
@@ -55,4 +55,4 @@ if (isset($_POST['create_table'])) {
     </div>
   </form>
 </body>
-</html>
+</html> -->
